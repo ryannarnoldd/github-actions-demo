@@ -5,8 +5,10 @@ name: Lint workflow
 on:
   pull_request:
     branches:
+      - main
       - develop
       - staging
+      - feature
 
 # Jobs to carry out
 jobs:
@@ -32,3 +34,11 @@ jobs:
       # Run lint
       - name: Run Lint
         run: npm run lint
+
+      # Run Build
+      - name: Run Build
+        run: npm run build
+      
+      # Run Test
+      - name: Run Test
+        run: npm run test
