@@ -8,6 +8,7 @@ on:
       - main
       - develop
       - staging
+      - feature
 
 # Jobs to carry out
 jobs:
